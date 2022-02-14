@@ -74,9 +74,39 @@ header{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+h2 a{
+    text-decoration: none;
+    color:rgb(7, 105, 144);
+}
 h2{
     margin: 40px;
+}
+.wrapper{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.digitacao-simples{
+    width: 29ch;
+    animation: typing 2s steps(40), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+}
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
 }
 
 .divDestinos{
@@ -120,14 +150,22 @@ footer span{
     box-shadow: 0px 0px 10px 1px black;
 }
 
-
+.header-contato{
+    background: url(img/top-contato.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    box-shadow: 0px 0px 10px 1px black;
+}
+.container{
+    margin-bottom: 2rem;
+}
 .container-cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-
 
 .cards-cadastros{
     display: flex;
@@ -167,3 +205,13 @@ footer span{
     opacity: 0.7;;
 }
 
+.btnsub{
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    max-width: 500px;
+    border-radius: 2px;
+    background: rgb(7, 105, 144);
+}
